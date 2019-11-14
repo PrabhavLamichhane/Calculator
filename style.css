@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient(#ffecd2, #fcb69f) no-repeat;
+  height: 100vh;
+}
+
+.calculator {
+  border: 2px solid green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.container {
+  background: #001b3a;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 20px;
+}
+
+.output-field {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  color: #fff;
+  background: #000000;
+  width: 100%;
+  padding: 3em;
+  max-height: 100%;
+
+  border-radius: 20px;
+}
+
+.working-btns {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(25px, 1fr));
+  background: #001b3a;
+  border-radius: 20px;
+}
+
+.btn,
+.btn-del,
+.btn-clear-all,
+.btn-1 {
+  margin: 1.2em 1em;
+  padding: 1em;
+  border: none;
+  background: #00008b;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 100%;
+  text-align: center;
+}
+
+.btn-1 {
+  background: #fd6a02;
+}
+.btn:active,
+.btn:focus,
+.btn-del,
+.btn-clear-all,
+.btn-1 {
+  /* /* border-style: outset;
+  border: none; */
+  outline-style: none;
+}
+
+.btn:hover {
+  background: #fd6a02;
+}
+
+.btn-1:hover {
+  background: #00008b;
+}
+@media (max-width: 400px) {
+  .btn {
+    font-size: 0.5rem;
+  }
+}
